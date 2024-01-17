@@ -5,7 +5,7 @@ const Modal = ({ activeId, setShowModal }) => {
   const portfolio = portfolios.find((portfolio) => portfolio.id === activeId);
   return (
     <div className="w-full h-full fixed top-0 left-0 z-10 bg-headingColor bg-opacity-40">
-      <div className=" max-w-[600px] absolute top-1/2 left-1/2 z-20 bg-white rounded-[8px] transform -translate-x-1/2 -translate-y-1/2 p-5">
+      <div className=" w-11/12 md:max-w-[600px] md:w-full absolute top-1/2 left-1/2 z-20 bg-white rounded-[8px] transform -translate-x-1/2 -translate-y-1/2 p-5">
         <div>
           <figure>
             <img className="rounded-[8px]" src={portfolio.imgUrl} alt="" />
@@ -32,7 +32,7 @@ const Modal = ({ activeId, setShowModal }) => {
           ))}
         </div>
         <a href={portfolio.siteUrl} target="_blank">
-          <button className="bg-primaryColor text-white py-2 px-4 my-8 rounded-[8px] fount-[500] hover:bg-headingColor ease-in duration-300">
+          <button className="bg-primaryColor text-white py-2 px-4 my-8 rounded-[8px] font-[500] hover:bg-headingColor ease-in duration-300">
             Live Site
           </button>
         </a>

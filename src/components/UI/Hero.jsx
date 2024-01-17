@@ -123,13 +123,17 @@ const Hero = () => {
           </div>
           {/**=========hero left content end =======*/}
           {/**=========hero img  =======*/}
-          <div className="basis-1/3 mt-10 sm:mt-0 ">
+          <div className="basis-1/3 mt-10 sm:mt-0  ">
             <figure
               className="flex items-center justify-center"
               data-aos="fade-up"
               data-aos-duration="2000"
             >
-              <img src={heroImg} alt="" />
+              <img
+                className="h-[450px] w-[330px] md:h-full md:w-full"
+                src={heroImg}
+                alt=""
+              />
             </figure>
           </div>
           {/**=========hero img end =======*/}
