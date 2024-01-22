@@ -10,7 +10,7 @@ const Services = () => {
       <div className="container lg:pt-5">
         <div className="text-center">
           <h2 className="text-headingColor font-[800] text-[2.4rem] mb-5">
-            What do i Help
+            Services & Experiences
           </h2>
           <p className="lg:max-w-[600px] lg:mx-auto text-headingColor font-[500] text-[16px] leading-7">
             Elevating User Experiences Through Innovative Frontend Development:
@@ -33,7 +33,7 @@ const Services = () => {
                         className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer easy-in duration-150"
                       >
                         <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font[600] text-2xl ">
-                          Frontend Developement
+                          Frontend Development
                         </h3>
                         <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
                           "Developed dynamic and responsive user interfaces
