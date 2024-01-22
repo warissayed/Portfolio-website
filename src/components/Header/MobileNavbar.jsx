@@ -23,7 +23,7 @@ const MobileNavbar = () => {
 
   return (
     <div className="navFix">
-      <div className="navContainer bg-red-500">
+      <div className="navContainer">
         <div
           className={`bottomNav grid grid-cols-2 gap-16 ${
             isChecked ? "icons-visible" : "icons-hidden"
