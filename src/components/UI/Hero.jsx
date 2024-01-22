@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="container pt-0">
         <div className="md:flex items-center justify-between sm:flex-col md:flex-row">
           {/**=========hero left content =======*/}
-          <div className="w-ful md:basis-1/2">
+          <div className="w-ful md:basis-1/2 ">
             <h5
               data-aos="fade-right"
               data-aos-duration="1500"
@@ -123,6 +123,7 @@ const Hero = () => {
           </div>
           {/**=========hero left content end =======*/}
           {/**=========hero img  =======*/}
+
           <div className="basis-1/3 mt-10 sm:mt-0  ">
             <figure
               className="flex items-center justify-center"
@@ -130,7 +131,7 @@ const Hero = () => {
               data-aos-duration="2000"
             >
               <img
-                className="h-[450px] w-[330px] md:h-full md:w-full"
+                className="h-[280px] w-[180px] md:h-full md:w-full"
                 src={heroImg}
                 alt=""
               />
@@ -138,7 +139,8 @@ const Hero = () => {
           </div>
           {/**=========hero img end =======*/}
           {/**=========hero right content =======*/}
-          <div className="md:basis-1/5 flex justify-between text-center mt-10 flex-wrap gap-3 md:mt-0 md:flex-col md:justify-end md:text-end">
+
+          <div className="md:basis-1/5 flex-col justify-between text-center mt-10 flex-wrap gap-3 md:mt-0 md:flex-col md:justify-end md:text-end">
             <div className="mb-10">
               <h2 className="text-headingColor font-[700] text-[32px] ">
                 <CountUp start={0} end={10} duration={2} suffix="M" />
@@ -175,6 +177,7 @@ const Hero = () => {
               </h4>
             </div>
           </div>
+
           {/**=========hero right content end =======*/}
         </div>
       </div>

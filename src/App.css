@@ -35,7 +35,7 @@ section {
   box-shadow: 3px 3px -8px 3px #ddd;
   z-index: 99;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 818px) {
   .menu {
     width: 100%;
     height: 100%;
@@ -62,4 +62,46 @@ section {
   .show_menu {
     display: block;
   }
+  .navFix {
+    @apply fixed right-[80%]  top-[90%] cursor-pointer translate-x-[-50%] translate-y-[-90%] z-10;
+  }
+  .navContainer {
+    @apply absolute left-[90%] top-[90%] cursor-pointer  translate-x-[-50%] translate-y-[-50%];
+  }
+}
+
+/* suggested section */
+.bottomNav {
+  @apply sm:relative md:fixed right-12 bottom-12 h-14 w-0 duration-500 bg-gray-400 p-3  translate-x-[50%] transition-[width,right] delay-[1s,2.5s] rounded-md z-10;
+}
+.control-btn {
+  @apply absolute left-[50%] top-[50%] cursor-pointer  translate-x-[-50%] translate-y-[-50%] h-16 w-16 bg-primaryColor flex items-center justify-center rounded-full duration-300;
+} /* ye x position hai */
+.bottomNav:has(#check:checked) {
+  @apply right-[50%]  translate-x-[50%] w-[285px] md:w-80 transition-[width,right] delay-[1s,0s] duration-500;
+} /*  ye position x ko middle me lata hai  */
+svg {
+  @apply duration-300 delay-[2s];
+}
+/* ye spin duration hai} */
+#check:checked + svg {
+  @apply -rotate-[135deg] delay-[2s];
+} /* x ye spin  hai} */
+.control-btn:has(#check:checked) {
+  @apply top-0 delay-[3s] bg-rose-500 shadow-lg shadow-rose-800;
+}
+i.icon {
+  @apply justify-start cursor-pointer;
+}
+
+i.icon:hover {
+  @apply -translate-y-1 scale-110;
+}
+
+.icons-hidden .icon {
+  display: none;
+}
+
+.icons-visible .icon {
+  display: block;
 }

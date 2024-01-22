@@ -82,7 +82,7 @@ const Header = () => {
                   className=" text-smallTextColor font-[600]"
                   href="#portfolio"
                 >
-                  Portfilio
+                  Portfolio
                 </a>
               </li>
               <li>
