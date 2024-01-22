@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 
 const MobileNavbar = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [showIcons, setShowIcons] = useState(false);
-  const menuRef = useRef(null);
 
   useEffect(() => {
     if (isChecked) {

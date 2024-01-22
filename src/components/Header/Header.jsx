@@ -61,7 +61,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className=" text-smallTextColor font-[600]"
+                  className=" text-smallTextColor font-[600] hover:text-primaryColor border"
                   href="#about"
                 >
                   About
@@ -70,7 +70,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className=" text-smallTextColor font-[600]"
+                  className=" text-smallTextColor font-[600] hover:text-primaryColor"
                   href="#services"
                 >
                   Services
@@ -79,7 +79,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className=" text-smallTextColor font-[600]"
+                  className=" text-smallTextColor font-[600] hover:text-primaryColor"
                   href="#portfolio"
                 >
                   Portfolio
@@ -88,7 +88,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className=" text-smallTextColor font-[600]"
+                  className=" text-smallTextColor font-[600] hover:text-primaryColor  "
                   href="#contact"
                 >
                   Contact
