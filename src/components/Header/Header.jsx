@@ -105,12 +105,12 @@ const Header = () => {
                 <i class="ri-send-plane-fill"></i>Let's Talk
               </button>
             </a>
-            {/* <span
+            <span
               onClick={toggleMenu}
               className=" text-2xl text-smallTextColor md:hidden cursor-pointer"
             >
               <i class="ri-menu-line"></i>
-            </span> */}
+            </span>
           </div>
           {/*==================Menu Right End================ */}
         </div>
