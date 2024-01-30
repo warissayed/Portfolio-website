@@ -44,7 +44,7 @@ const portfolios = [
   },
   {
     id: "04",
-    imgUrl: portfolioImg05,
+    imgUrl: portfolioImg06,
     category: "Web Design",
     title: "Context API TODO",
     description:
@@ -70,7 +70,7 @@ const portfolios = [
 
   {
     id: "06",
-    imgUrl: portfolioImg06,
+    imgUrl: portfolioImg05,
     category: "Web Design",
     title: "Online TODO Website",
     description:
