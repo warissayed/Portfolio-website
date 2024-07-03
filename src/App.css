@@ -24,6 +24,7 @@ body {
 section {
   padding: 50px 0;
 }
+
 .sticky_header {
   width: 100%;
   height: 80px;
@@ -34,7 +35,15 @@ section {
   background: #fff;
   box-shadow: 3px 3px -8px 3px #ddd;
   z-index: 99;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 1;
 }
+.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
 @media only screen and (max-width: 818px) {
   .menu {
     width: 100%;
@@ -48,7 +57,7 @@ section {
   }
   .menu ul {
     width: 15rem;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
@@ -63,7 +72,7 @@ section {
     display: block;
   }
   .navFix {
-    @apply fixed right-[80%]  top-[90%] cursor-pointer translate-x-[-50%] translate-y-[-90%] z-10;
+    @apply fixed right-[85%]  top-[90%] cursor-pointer translate-x-[-50%] translate-y-[-90%] z-10;
   }
   .navContainer {
     @apply absolute left-[90%] top-[90%] cursor-pointer  translate-x-[-50%] translate-y-[-50%];
@@ -72,7 +81,7 @@ section {
 
 /* suggested section */
 .bottomNav {
-  @apply sm:relative md:fixed right-12 bottom-12 h-14 w-0 duration-500 bg-gray-400 p-3  translate-x-[50%] transition-[width,right] delay-[1s,2.5s] rounded-md z-10;
+  @apply sm:relative md:fixed right-12 bottom-12 h-14 w-0 duration-500 bg-gray-400 p-3  translate-x-[50%] transition-[width,right] delay-[0.5s,2.5s] rounded-md z-10;
 }
 .control-btn {
   @apply absolute left-[50%] top-[50%] cursor-pointer  translate-x-[-50%] translate-y-[-50%] h-16 w-16 bg-primaryColor flex items-center justify-center rounded-full duration-300;

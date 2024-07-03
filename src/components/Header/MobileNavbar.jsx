@@ -21,7 +21,7 @@ const MobileNavbar = () => {
   };
 
   return (
-    <div className="navFix">
+    <div className="navFix h-lvh">
       <div className="navContainer">
         <div
           className={`bottomNav grid grid-cols-2 gap-16 ${

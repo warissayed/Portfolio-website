@@ -27,11 +27,7 @@ const Services = () => {
                 <div className="flex items-center flex-col sm:flex-row">
                   <div className="flex  justify-start w-full mx-auto items-center">
                     <div className="w-full sm:w-1/2 sm:pr-8">
-                      <div
-                        data-aos="fade-right"
-                        data-aos-duration="1200"
-                        className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer easy-in duration-150"
-                      >
+                      <div className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer easy-in duration-150">
                         <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font[600] text-2xl ">
                           Frontend Development
                         </h3>
@@ -58,11 +54,7 @@ const Services = () => {
                 <div className="flex items-center flex-col sm:flex-row">
                   <div className="flex  justify-end w-full mx-auto items-center">
                     <div className="w-full sm:w-1/2 sm:pl-8">
-                      <div
-                        data-aos="fade-left"
-                        data-aos-duration="1300"
-                        className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer easy-in duration-150"
-                      >
+                      <div className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer easy-in duration-150">
                         <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font[600] text-2xl ">
                           UiUx
                         </h3>
@@ -88,12 +80,7 @@ const Services = () => {
                 <div className="flex items-center flex-col sm:flex-row">
                   <div className="flex  justify-start w-full mx-auto items-center">
                     <div className="w-full sm:w-1/2 sm:pr-8">
-                      <div
-                        data-aos="fade-right"
-                        data-aos-delay="50"
-                        data-aos-duration="1400"
-                        className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer easy-in duration-150"
-                      >
+                      <div className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer easy-in duration-150">
                         <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font[600] text-2xl ">
                           Git and GitHub
                         </h3>
@@ -119,12 +106,7 @@ const Services = () => {
                 <div className="flex items-center flex-col sm:flex-row">
                   <div className="flex  justify-end w-full mx-auto items-center">
                     <div className="w-full sm:w-1/2 sm:pl-8">
-                      <div
-                        data-aos="fade-left"
-                        data-aos-delay="50"
-                        data-aos-duration="1500"
-                        className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer easy-in duration-150"
-                      >
+                      <div className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer easy-in duration-150">
                         <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font[600] text-2xl ">
                           Apps
                         </h3>

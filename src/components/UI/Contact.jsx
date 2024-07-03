@@ -59,12 +59,7 @@ const Contact = () => {
           Get in Touch
         </h2>
         <div className=" lg:flex mb:flex justify-between items-center">
-          <div
-            data-aos="fade-right"
-            data-aos-delay="50"
-            data-aos-duration="1500"
-            className=" sm:w-[100%] lg:w-[50%] mb:w-1/2 h-[300px] sm:h-[450px]"
-          >
+          <div className=" sm:w-[100%] lg:w-[50%] mb:w-1/2 h-[300px] sm:h-[450px]">
             <iframe
               title="google-maps"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30173.19819061955!2d72.9840858589816!3d19.035148355438192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3c00e6d7511%3A0xafc4771f960328ec!2sNerul%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1704575829880!5m2!1sen!2sin"
@@ -75,12 +70,7 @@ const Contact = () => {
             ></iframe>
           </div>
 
-          <div
-            data-aos="fade-left"
-            data-aos-delay="50"
-            data-aos-duration="1500"
-            className="w-full mt-8 md:mt-0 sm:h-[450px] sm:w-[450px] md:w-[100%] lg:w-1/2 lg:flex items-center bg-indigo-200 px-4 lg:px-8 py-8"
-          >
+          <div className="w-full mt-8 md:mt-0 sm:h-[450px] sm:w-[450px] md:w-[100%] lg:w-1/2 lg:flex items-center bg-indigo-200 px-4 lg:px-8 py-8">
             <form ref={form} onSubmit={sendEmail} className="w-full">
               <div className="mb-5">
                 <input

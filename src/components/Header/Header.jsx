@@ -3,17 +3,29 @@ import React, { useRef, useEffect } from "react";
 const Header = () => {
   const headerRef = useRef(null);
   const menuRef = useRef(null);
+  let scrollTimeout = null;
 
   const stickyHeaderFunc = () => {
     window.addEventListener("scroll", () => {
+      clearTimeout(scrollTimeout);
       if (
         document.body.scrollTop > 80 ||
         document.documentElement.scrollTop > 80
       ) {
         headerRef.current.classList.add("sticky_header");
+        headerRef.current.classList.remove("hide");
       } else {
         headerRef.current.classList.remove("sticky_header");
       }
+      scrollTimeout = setTimeout(() => {
+        if (
+          document.body.scrollTop > 80 ||
+          document.documentElement.scrollTop > 80
+        ) {
+          headerRef.current.classList.add("hide");
+          headerRef.current.classList.remove("sticky_header");
+        }
+      }, 3000);
     });
   };
   useEffect(() => {
@@ -30,6 +42,7 @@ const Header = () => {
     window.scrollTo({
       top: location - 80,
       left: 0,
+      behavior: "smooth",
     });
   };
 

@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import Aos from "aos";
 
 import "./App.css";
 import Header from "./components/Header/Header";
@@ -11,9 +10,9 @@ import Contact from "./components/UI/Contact";
 import MobileNavbar from "./components/Header/MobileNavbar";
 
 function App() {
-  useEffect(() => {
-    Aos.init();
-  }, []);
+  // useEffect(() => {
+  //   Aos.init();
+  // }, []);
 
   return (
     <>

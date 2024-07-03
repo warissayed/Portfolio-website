@@ -10,26 +10,11 @@ const Hero = () => {
         <div className="md:flex items-center justify-between sm:flex-col md:flex-row">
           {/**=========hero left content =======*/}
           <div className="w-ful md:basis-1/2 ">
-            <h5
-              data-aos="fade-right"
-              data-aos-duration="1500"
-              className="text-headingColor font-[600] text-[16px]"
-            >
-              Hello, Welcome
-            </h5>
-            <h1
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              className="text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[45px] sm:leading-[46px] mt-5"
-            >
+            <h5>Hello, Welcome</h5>
+            <h1 className="text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[45px] sm:leading-[46px] mt-5">
               I'm Waris Sayed <br /> Frontend Developer 👋
             </h1>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-delay="200"
-              className="flex items-center gap-6 mt-7"
-            >
+            <div className="flex items-center gap-6 mt-7">
               <a href="#contact">
                 <button className=" flex items-center justify-center bg-primaryColor text-white font-[500] gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]">
                   <i class="ri-mail-fill"></i>Hire me
@@ -49,12 +34,7 @@ const Hero = () => {
                 <i class="ri-arrow-down-line"></i> Resume
               </a>
             </div>
-            <p
-              className="flex gap-2 text-headingColor mt-14 font-[600] text-[17px] leading-7 sm:pl-14 sm:pr-10"
-              data-aos="fade-left"
-              data-aos-duration="1500"
-              data-aos-delay="200"
-            >
+            <p className="flex gap-2 text-headingColor mt-14 font-[600] text-[17px] leading-7 sm:pl-14 sm:pr-10">
               <span>
                 <i class="ri-apps-line"></i>
               </span>
@@ -62,11 +42,7 @@ const Hero = () => {
               Passion Meets Proficiency, because the Only Way to Master Frontend
               Development is to Code, Code, Code!
             </p>
-            <div
-              className="flex items-center gap-9 mt-14"
-              data-aos="fade-right"
-              data-aos-duration="1500"
-            >
+            <div className="flex items-center gap-9 mt-14">
               <span className="text-smallTextColor text-[15px] font-[600]">
                 Follow me:
               </span>
@@ -125,11 +101,7 @@ const Hero = () => {
           {/**=========hero img  =======*/}
 
           <div className="basis-1/3 mt-10 sm:mt-0  ">
-            <figure
-              className="flex items-center justify-center"
-              data-aos="fade-up"
-              data-aos-duration="2000"
-            >
+            <figure className="flex items-center justify-center">
               <img
                 className="h-[280px] w-[180px] md:h-full md:w-full"
                 src={heroImg}

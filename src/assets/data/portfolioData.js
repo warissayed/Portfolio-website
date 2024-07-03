@@ -24,12 +24,7 @@ const portfolios = [
     title: "GYM Website",
     description:
       " Experience the perfect blend of cutting-edge technology and dynamic design on our React. js-powered FitFun Gym website. With sleek CSS styles Vibrant Remixicon icons, smooth AOS animation, and swiper for Cards. !",
-    technologies: [
-      "React",
-      "Tailwind css",
-      "AOS animation",
-      "swiper for Cards",
-    ],
+    technologies: ["React", "Tailwind css", "AOS", "swiperCards"],
     siteUrl: "https://fitfun-gym.vercel.app/",
   },
   {
@@ -39,7 +34,7 @@ const portfolios = [
     title: "Foody Doody",
     description:
       "Foodydoody is a sleek online food-ordering website skillfully crafted with React and Tailwind CSS. Elevating user experience with AOS animations showcases my proficiency in front-end development!",
-    technologies: ["React", "Tailwind css", "AOS animations"],
+    technologies: ["React", "Tailwind css", "AOS"],
     siteUrl: "https://foody-doody.vercel.app/",
   },
   {
@@ -48,7 +43,8 @@ const portfolios = [
     category: "Web Design",
     title: "Context API TODO",
     description:
-      "In this Vite React project, I employed the Context API for streamlined state management and utilized local storage to persistently store key data. This ensured a seamless user experience with efficient data retrieval, enhancing the overall responsiveness and usability of the application",
+      "In this Vite React project, I used the Context API and local storage for efficient state management and data persistence, ensuring a seamless and responsive user experience.",
+
     technologies: ["React", "Tailwind css", "Context API", "Local Storage"],
     siteUrl: "https://contextapi-todo.vercel.app/",
   },
@@ -58,13 +54,8 @@ const portfolios = [
     category: "Web Design",
     title: "ReduxTool-Kit E-commmerce ",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
-    technologies: [
-      "React",
-      "Tailwind css",
-      "Redux-toolkit",
-      "React Router-Dom",
-    ],
+      "My E-commerce website, built with React and Tailwind CSS, uses Redux Toolkit for seamless state management and responsive styling, creating a functional and visually appealing platform.",
+    technologies: ["React", "Tailwind css", "Redux", "Router-Dom"],
     siteUrl: "https://react-redux-toolkit-e-commerce-project.vercel.app/",
   },
 
@@ -74,8 +65,8 @@ const portfolios = [
     category: "Web Design",
     title: "Online TODO Website",
     description:
-      "In my TODO website built with React and Tailwind CSS, I harnessed the power of Redux Toolkit for efficient state management. This combination allowed seamless integration of global state, enhancing the user experience by providing a centralized store for TODO data. The use of Tailwind CSS facilitated quick and responsive styling, ensuring an aesthetically pleasing and functional TODO application.",
-    technologies: ["React", "Tailwind css", "Redux tool-kit"],
+      "My TODO website, built with React and Tailwind CSS, uses Redux Toolkit for seamless state management and responsive styling, creating a functional and visually appealing app.",
+    technologies: ["React", "Tailwind css", "Redux"],
     siteUrl: "https://redux-toolkit-todo-zeta.vercel.app/",
   },
   {
@@ -84,13 +75,13 @@ const portfolios = [
     category: "Web Design",
     title: "Portfolio Website",
     description:
-      "Explore my dynamic portfolio website crafted with React. js, Tailwind CSS, striking Remixicon icons, enchanting AOS animations, seamless email interactions through email.js, and engaging numerical showcases with React Count-Up. Witness innovation in every click!",
+      "Explore my dynamic portfolio built with React.js, Tailwind CSS, Remixicon, AOS animations, email.js, and React Count-Up. Innovation in every click!",
+
     technologies: [
       "React",
       "Tailwind css",
-      "AOS animations",
+      "AOS",
       "email.js",
-      "Remixicon icons",
       "React Count-Up",
     ],
     siteUrl: "#",
