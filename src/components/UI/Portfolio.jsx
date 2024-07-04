@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import data from "../../assets/data/portfolioData";
 import Modal from "./Modal";
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
   const [nextItems, setNextItems] = useState(6);
@@ -37,31 +38,61 @@ const Portfolio = () => {
     <section id="portfolio">
       <div className="container">
         <div className="flex justify-between items-center flex-wrap">
-          <div className="mb-7 sm:mb-0">
+          <motion.div
+            animate={{ y: [0, -5, 0] }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 2,
+              ease: "easeInOut",
+            }}
+            className="mb-7 sm:mb-0"
+          >
             <h3 className="text-headingColor text-[2rem] font-[700]">
               My recent Projects
             </h3>
-          </div>
+          </motion.div>
 
           <div className="flex gap-3">
-            <button
+            <motion.button
+              animate={{ y: [0, -5, 0] }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 2,
+                ease: "easeInOut",
+              }}
               onClick={() => setSelectTab("all")}
               className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]"
             >
               All
-            </button>
-            <button
+            </motion.button>
+            <motion.button
+              animate={{ y: [0, -5, 0] }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 2,
+                ease: "easeInOut",
+              }}
               onClick={() => setSelectTab("web-design")}
               className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]"
             >
               Web Design
-            </button>
-            <button
+            </motion.button>
+            <motion.button
+              animate={{ y: [0, -5, 0] }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 2,
+                ease: "easeInOut",
+              }}
               onClick={() => setSelectTab("ux-design")}
               className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]"
             >
               UX Design
-            </button>
+            </motion.button>
           </div>
         </div>
         <div className="  flex items-center gap-4 flex-wrap mt-12">
@@ -94,7 +125,7 @@ const Portfolio = () => {
           {nextItems < portfolios.length && data.length > 6 && (
             <button
               onClick={loadMoreHandler}
-              className="text-white bg-primaryColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] ease-in duration-200"
+              className="rounded-lg border-2 border-dashed border-black bg-primaryColor px-3 py-1.5 font-semibold uppercase text-white transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
             >
               Load More
             </button>

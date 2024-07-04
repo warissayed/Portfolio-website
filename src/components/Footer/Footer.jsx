@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -7,17 +8,35 @@ const Footer = () => {
       {/** ============footer top ============== */}
       <div className="container">
         <div className="sm:flex items-center justify-between mb:gap-8">
-          <div className="w-full sm:w-1/2">
+          <motion.div
+            animate={{ y: [0, -5, 0] }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 2,
+              ease: "easeInOut",
+            }}
+            className="w-full sm:w-1/2"
+          >
             <h2 className="text-[26px] leading-10 text-white font-[600] mb-5 md:text-[2rem]">
               Do you want to make beautiful Projects?
             </h2>
             <a href="#contact">
-              <button className=" flex items-center justify-center bg-primaryColor text-white font-[500] gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]">
+              <button className=" flex items-center justify-center rounded-lg border-2 border-dashed border-gray-200 bg-primaryColor px-4 py-2 font-semibold uppercase text-gray-200 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
                 <i class="ri-mail-fill"></i>Hire me
               </button>
             </a>
-          </div>
-          <div className="w-full sm:w-1/2">
+          </motion.div>
+          <motion.div
+            animate={{ y: [0, -5, 0] }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 2,
+              ease: "easeInOut",
+            }}
+            className="w-full sm:w-1/2"
+          >
             <p className="text-gray-300 leading-7 mt-4 sm:mt-0">
               Passionate about crafting seamless digital experiences through
               code and design. Front-End Developer | UI-UX Enthusiast | Version
@@ -77,7 +96,7 @@ const Footer = () => {
                 </a>
               </span>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div>
           <ul className="flex items-center justify-center gap-10 mt-10">

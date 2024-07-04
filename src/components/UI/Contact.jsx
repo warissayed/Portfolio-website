@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs, { send } from "@emailjs/browser";
+import { motion } from "framer-motion";
 const Contact = () => {
   const form = useRef();
   const [formData, setFormData] = useState({
@@ -55,9 +56,18 @@ const Contact = () => {
   return (
     <section id="contact" className="pb-16">
       <div className="container">
-        <h2 className="text-headingColor font-[700] text-[2.5rem] mb-8">
+        <motion.h2
+          animate={{ y: [0, -5, 0] }}
+          transition={{
+            repeat: Infinity,
+            repeatType: "loop",
+            duration: 2,
+            ease: "easeInOut",
+          }}
+          className="text-headingColor font-[700] text-[2.5rem] mb-8"
+        >
           Get in Touch
-        </h2>
+        </motion.h2>
         <div className=" lg:flex mb:flex justify-between items-center">
           <div className=" sm:w-[100%] lg:w-[50%] mb:w-1/2 h-[300px] sm:h-[450px]">
             <iframe

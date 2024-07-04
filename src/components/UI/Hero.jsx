@@ -2,21 +2,54 @@ import React from "react";
 import heroImg from "../../assets/images/Avatar 2.png";
 import CountUp from "react-countup";
 import rasume from "../../assets/pdf/Warissayed.pdf";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section className="pt-0" id="about">
       <div className="container pt-0">
-        <div className="md:flex items-center justify-between sm:flex-col md:flex-row">
+        <div className="md:flex items-center justify-between sm:flex-col md:flex-row  ">
           {/**=========hero left content =======*/}
           <div className="w-ful md:basis-1/2 ">
-            <h5>Hello, Welcome</h5>
-            <h1 className="text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[45px] sm:leading-[46px] mt-5">
-              I'm Waris Sayed <br /> Frontend Developer 👋
-            </h1>
+            <motion.h5
+              // variants={{
+              //   hidden: { opacity: 0, x: 75 },
+              //   visible: { opacity: 1, x: 0 },
+              // }}
+              initial={{ opacity: 0, x: -75 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{
+                once: true,
+              }}
+            >
+              Hello, Welcome
+            </motion.h5>
+            <motion.h1
+              animate={{ y: [0, -6, 0] }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 2,
+                ease: "easeInOut",
+              }}
+              className="text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[45px] sm:leading-[46px] mt-5"
+            >
+              I'm Waris Sayed{" "}
+              <motion.h1
+                animate={{ y: [0, -5, 0] }}
+                transition={{
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  duration: 2,
+                  ease: "easeInOut",
+                }}
+              >
+                Frontend Developer 👋
+              </motion.h1>
+            </motion.h1>
             <div className="flex items-center gap-6 mt-7">
               <a href="#contact">
-                <button className=" flex items-center justify-center bg-primaryColor text-white font-[500] gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]">
+                <button className=" rounded-lg border-2 border-dashed border-black bg-primaryColor px-4 py-2 font-semibold uppercase text-white transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
                   <i class="ri-mail-fill"></i>Hire me
                 </button>
               </a>
@@ -38,11 +71,18 @@ const Hero = () => {
               <span>
                 <i class="ri-apps-line"></i>
               </span>
-              Crafting Exceptional User Experiences One Line at a Time: Where
-              Passion Meets Proficiency, because the Only Way to Master Frontend
-              Development is to Code, Code, Code!
+              Crafting Exception Into Reality One Line at a Time: Where Passion
+              Meets Proficiency, The Only Way to become a coding expert, You
+              need to code, code, and code some more!
             </p>
-            <div className="flex items-center gap-9 mt-14">
+            <motion.div
+              initial={{ opacity: 0, x: -75 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{
+                once: true,
+              }}
+              className="flex items-center gap-9 mt-14"
+            >
               <span className="text-smallTextColor text-[15px] font-[600]">
                 Follow me:
               </span>
@@ -95,19 +135,28 @@ const Hero = () => {
                   <i class="ri-mail-send-fill"></i>
                 </a>
               </span>
-            </div>
+            </motion.div>
           </div>
           {/**=========hero left content end =======*/}
           {/**=========hero img  =======*/}
 
           <div className="basis-1/3 mt-10 sm:mt-0  ">
-            <figure className="flex items-center justify-center">
+            <motion.figure
+              animate={{ y: [5, -7, 5] }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 2,
+                ease: "easeInOut",
+              }}
+              className="flex items-center justify-center"
+            >
               <img
                 className="h-[280px] w-[180px] md:h-full md:w-full"
                 src={heroImg}
                 alt=""
               />
-            </figure>
+            </motion.figure>
           </div>
           {/**=========hero img end =======*/}
           {/**=========hero right content =======*/}

@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const headerRef = useRef(null);
@@ -56,9 +57,18 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/*================== Logo================ */}
           <div className="flex items-center gap-[10px]">
-            <span className="w-[35px] h-[35px] bg-primaryColor text-white text-[18px] font-[500] rounded-full flex items-center justify-center">
+            <motion.span
+              animate={{ rotate: 360 }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 10,
+                ease: "linear",
+              }}
+              className="w-[35px] h-[35px] bg-primaryColor text-white text-[18px] font-[500] rounded-full flex items-center justify-center"
+            >
               W
-            </span>
+            </motion.span>
             <div className=" leading-[20px]">
               <h2 className=" text-xl text-smallTextColor font-[700]">Waris</h2>
               <p className="text-smallTextColor text-[14px] font-[500]">
@@ -114,8 +124,28 @@ const Header = () => {
           {/*==================Menu Right ================ */}
           <div className="flex items-center gap-4">
             <a href="mailto:warissayed72@gmail.com">
-              <button className="flex items-center gap-2 text-smallTextColor font-[600] border border-solid border-smallTextColor py-2 px-4 rounded-[8px] max-h-[32px] hover:bg-smallTextColor hover:text-white hover:font-[500] ease-in duration-300">
-                <i class="ri-send-plane-fill"></i>Let's Talk
+              <button className="flex items-center gap-2 text-smallTextColor font-[600] border border-solid border-smallTextColor py-2 px-4 rounded-[8px] max-h-[32px] hover:bg-primaryColor hover:text-black hover:font-[500] ease-in duration-300">
+                <motion.i
+                  animate={{ y: [0, -4, 0] }} // Move up, then down
+                  transition={{
+                    repeat: Infinity,
+                    repeatType: "loop",
+                    duration: 2, // Adjust the duration to slow down the floating effect
+                    ease: "easeInOut",
+                  }}
+                  class="ri-send-plane-fill"
+                ></motion.i>
+                <motion.p
+                  animate={{ scale: [0.8, 1.05, 0.8] }} // Scale up, then back to original size
+                  transition={{
+                    repeat: Infinity,
+                    repeatType: "loop",
+                    duration: 3, // Adjust the duration to slow down the pop-out effect
+                    ease: "easeInOut",
+                  }}
+                >
+                  Let's Talk
+                </motion.p>
               </button>
             </a>
             <span
