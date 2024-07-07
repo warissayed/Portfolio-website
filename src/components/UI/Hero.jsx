@@ -1,7 +1,7 @@
 import React from "react";
 import heroImg from "../../assets/images/Avatar 2.png";
 import CountUp from "react-countup";
-import rasume from "../../assets/pdf/WarisSayed.pdf";
+import rasume from "../../assets/pdf/warissayed (2).pdf";
 import { motion } from "framer-motion";
 import { Reveal } from "../Animation/Reveal";
 import { RevealX } from "../Animation/RevealX";
