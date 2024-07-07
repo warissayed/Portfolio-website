@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import data from "../../assets/data/portfolioData";
 import Modal from "./Modal";
 import { motion } from "framer-motion";
+import { Reveal } from "../Animation/Reveal";
 
 const Portfolio = () => {
   const [nextItems, setNextItems] = useState(6);
@@ -38,20 +39,22 @@ const Portfolio = () => {
     <section id="portfolio">
       <div className="container">
         <div className="flex justify-between items-center flex-wrap">
-          <motion.div
-            animate={{ y: [0, -5, 0] }}
-            transition={{
-              repeat: Infinity,
-              repeatType: "loop",
-              duration: 2,
-              ease: "easeInOut",
-            }}
-            className="mb-7 sm:mb-0"
-          >
-            <h3 className="text-headingColor text-[2rem] font-[700]">
-              My recent Projects
-            </h3>
-          </motion.div>
+          <Reveal>
+            <motion.div
+              animate={{ y: [0, -5, 0] }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 2,
+                ease: "easeInOut",
+              }}
+              className="mb-7 sm:mb-0"
+            >
+              <h3 className="text-headingColor text-[2rem] font-[700]">
+                My recent Projects
+              </h3>
+            </motion.div>
+          </Reveal>
 
           <div className="flex gap-3">
             <motion.button
@@ -63,7 +66,7 @@ const Portfolio = () => {
                 ease: "easeInOut",
               }}
               onClick={() => setSelectTab("all")}
-              className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]"
+              className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px] "
             >
               All
             </motion.button>

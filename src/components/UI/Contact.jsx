@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import emailjs, { send } from "@emailjs/browser";
 import { motion } from "framer-motion";
+import { Reveal } from "../Animation/Reveal";
+
 const Contact = () => {
   const form = useRef();
   const [formData, setFormData] = useState({
@@ -56,18 +58,20 @@ const Contact = () => {
   return (
     <section id="contact" className="pb-16">
       <div className="container">
-        <motion.h2
-          animate={{ y: [0, -5, 0] }}
-          transition={{
-            repeat: Infinity,
-            repeatType: "loop",
-            duration: 2,
-            ease: "easeInOut",
-          }}
-          className="text-headingColor font-[700] text-[2.5rem] mb-8"
-        >
-          Get in Touch
-        </motion.h2>
+        <Reveal>
+          <motion.h2
+            animate={{ y: [0, -5, 0] }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 2,
+              ease: "easeInOut",
+            }}
+            className="text-headingColor font-[700] text-[2.5rem] mb-8"
+          >
+            Get in Touch
+          </motion.h2>{" "}
+        </Reveal>
         <div className=" lg:flex mb:flex justify-between items-center">
           <div className=" sm:w-[100%] lg:w-[50%] mb:w-1/2 h-[300px] sm:h-[450px]">
             <iframe
@@ -78,8 +82,7 @@ const Contact = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-          </div>
-
+          </div>{" "}
           <div className="w-full mt-8 md:mt-0 sm:h-[450px] sm:w-[450px] md:w-[100%] lg:w-1/2 lg:flex items-center bg-indigo-200 px-4 lg:px-8 py-8">
             <form ref={form} onSubmit={sendEmail} className="w-full">
               <div className="mb-5">
