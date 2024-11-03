@@ -8,6 +8,7 @@ import Services from "./components/UI/Services";
 import Portfolio from "./components/UI/Portfolio";
 import Contact from "./components/UI/Contact";
 import MobileNavbar from "./components/Header/MobileNavbar";
+import SliderCard from "./components/UI/SliderCard";
 
 function App() {
   // useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
       <MobileNavbar />
       <main>
         <Hero />
+        <SliderCard />
         <Services />
         <Portfolio />
         <Contact />

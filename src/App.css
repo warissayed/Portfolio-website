@@ -114,3 +114,40 @@ i.icon:hover {
 .icons-visible .icon {
   display: block;
 }
+
+/* This is for the slider card */
+@keyframes scrollX {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scrollXReverse {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.animate-scrollX {
+  animation: scrollX 30s linear infinite;
+}
+
+.animate-scrollXReverse {
+  animation: scrollXReverse 30s linear infinite;
+}
+
+.mask-gradient {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
