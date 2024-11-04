@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 import "./App.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -8,20 +6,16 @@ import Services from "./components/UI/Services";
 import Portfolio from "./components/UI/Portfolio";
 import Contact from "./components/UI/Contact";
 import MobileNavbar from "./components/Header/MobileNavbar";
-import SliderCard from "./components/UI/SliderCard";
+import SkillsAndExperience from "./components/UI/SkillsAndExperience";
 
 function App() {
-  // useEffect(() => {
-  //   Aos.init();
-  // }, []);
-
   return (
     <>
       <Header />
       <MobileNavbar />
       <main>
         <Hero />
-        <SliderCard />
+        <SkillsAndExperience />
         <Services />
         <Portfolio />
         <Contact />

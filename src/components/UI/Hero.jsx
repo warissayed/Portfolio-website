@@ -86,8 +86,9 @@ const Hero = () => {
               <p className="flex gap-2 text-headingColor mt-14 font-[600] text-[17px] leading-7 sm:pl-14 sm:pr-10">
                 <span>
                   <i className="ri-map-pin-line"></i> India Navi Mumbai.
-                  <br /> <i className="ri-user-location-fill"></i>This is next
-                  line
+                  <br /> <i className="ri-user-location-fill"></i> I'm a Full
+                  Stack Developer with experience in building responsive web and
+                  mobile applications using MERN, Next.js, and React Native
                 </span>
               </p>
             </RevealX>
