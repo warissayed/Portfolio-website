@@ -5,17 +5,68 @@ import portfolioImg04 from "../images/portfolio-04.gif";
 import portfolioImg05 from "../images/portfolio-05.gif";
 import portfolioImg06 from "../images/portfolio-06.gif";
 import portfolioImg07 from "../images/portfolio-07.gif";
+import portfolioImg08 from "../images/portfolio-08.png";
+import portfolioImg09 from "../images/portfolio-09.gif";
 import portfolioImg10 from "../images/portfolio-10.gif";
 import portfolioImg11 from "../images/portfolio-11.gif";
 import portfolioImg12 from "../images/portfolio-12.gif";
 import portfolioImg13 from "../images/portfolio-13.gif";
 import portfolioImg14 from "../images/portfolio-14.gif";
 import portfolioImg15 from "../images/portfolio-15.gif";
+import portfolioIm16 from "../images/portfolio-16.png";
 
 const portfolios = [
-  //old projects below
   {
     id: "01",
+    imgUrl: portfolioIm16,
+    category: "Ux",
+    title: "shopify to nextjs migration shopping and blog website",
+
+    description:
+      "A modern e-commerce website built with Next.js, ShadCN UI, Framer Motion, Tailwind CSS, and dynamic routing, migrating from an old Shopify PHP site. This project demonstrates my ability to modernize legacy websites, enhancing performance, interactivity, and design, while maintaining core functionality. It features dynamic product pages, smooth animations, and a fully responsive UI for a seamless user experience. ",
+    technologies: [
+      "Next.js",
+      "Tailwind css",
+      "ShadCN UI",
+      "Framer Motion",
+      "Shopify",
+      "React",
+    ],
+    siteUrl: "https://fresh-food-pearl.vercel.app/",
+  },
+  {
+    id: "02",
+    imgUrl: portfolioImg08,
+    category: "Web Design",
+    title: "MERN Stack Blog Website",
+    description:
+      "A fully functional blog website built with the MERN stack, featuring user authentication, CRUD operations, and a responsive design. This project showcases my proficiency in full-stack development, Real time comment update with socket.io, profile and admin page for user .",
+    technologies: [
+      "Next.js",
+      "Tailwind css",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Socket.io",
+      "JWT",
+      "zustand",
+      "Framer Motion",
+    ],
+    siteUrl: "https://xzenblog.vercel.app/",
+  },
+  {
+    id: "03",
+    imgUrl: portfolioImg09,
+    category: "Web Design",
+    title: "Coffee Shop Website",
+    description:
+      "A sleek and modern coffee shop website built with React.js, Tailwind CSS, and Framer Motion animations. This project showcases my skills in front-end development and user experience design.",
+    technologies: ["React", "Tailwind css", "Framer Motion"],
+    siteUrl: "https://blend-joy.vercel.app/",
+  },
+
+  {
+    id: "04",
     imgUrl: portfolioImg01,
     category: "Web Design",
     title: "E-commerce Website",
@@ -25,7 +76,7 @@ const portfolios = [
     siteUrl: "https://step-craft.vercel.app/",
   },
   {
-    id: "02",
+    id: "05",
     imgUrl: portfolioImg04,
     category: "Ux",
     title: "GYM Website",
@@ -35,7 +86,7 @@ const portfolios = [
     siteUrl: "https://fitfun-gym.vercel.app/",
   },
   {
-    id: "03",
+    id: "06",
     imgUrl: portfolioImg02,
     category: "Web Design",
     title: "Foody Doody",
@@ -45,7 +96,7 @@ const portfolios = [
     siteUrl: "https://foody-doody.vercel.app/",
   },
   {
-    id: "04",
+    id: "07",
     imgUrl: portfolioImg06,
     category: "Web Design",
     title: "Context API TODO",
@@ -56,7 +107,7 @@ const portfolios = [
     siteUrl: "https://contextapi-todo.vercel.app/",
   },
   {
-    id: "05",
+    id: "08",
     imgUrl: portfolioImg03,
     category: "Web Design",
     title: "ReduxTool-Kit E-commmerce ",
@@ -67,7 +118,7 @@ const portfolios = [
   },
 
   {
-    id: "06",
+    id: "09",
     imgUrl: portfolioImg05,
     category: "Web Design",
     title: "Online TODO Website",
@@ -77,7 +128,7 @@ const portfolios = [
     siteUrl: "https://redux-toolkit-todo-zeta.vercel.app/",
   },
   {
-    id: "07",
+    id: "10",
     imgUrl: portfolioImg07,
     category: "Web Design",
     title: "Portfolio Website",
@@ -94,7 +145,7 @@ const portfolios = [
     siteUrl: "#",
   },
   {
-    id: "10",
+    id: "11",
     imgUrl: portfolioImg10,
     category: "Web Design",
     title: "Shoe e-commerce Website",
@@ -104,7 +155,7 @@ const portfolios = [
     siteUrl: "https://warissayed.github.io/shoeshopper/",
   },
   {
-    id: "11",
+    id: "12",
     imgUrl: portfolioImg11,
     category: "Web Design",
     title: "Image Gallery",
@@ -114,7 +165,7 @@ const portfolios = [
     siteUrl: "https://warissayed.github.io/CatSearch/",
   },
   {
-    id: "12",
+    id: "13",
     imgUrl: portfolioImg12,
     category: "Web Design",
     title: "Buzz Play Web Music player",
@@ -124,7 +175,7 @@ const portfolios = [
     siteUrl: "https://warissayed.github.io/bazzplay/",
   },
   {
-    id: "13",
+    id: "14",
     imgUrl: portfolioImg13,
     category: "Web Design",
     title: "Buzz Play",
@@ -134,7 +185,7 @@ const portfolios = [
     siteUrl: "https://warissayed.github.io/bazzplay/",
   },
   {
-    id: "14",
+    id: "15",
     imgUrl: portfolioImg14,
     category: "Web Design",
     title: "Drum Kit App",
@@ -144,7 +195,7 @@ const portfolios = [
     siteUrl: "https://warissayed.github.io/Drum-kit/",
   },
   {
-    id: "15",
+    id: "16",
     imgUrl: portfolioImg15,
     category: "Web Design",
     title: "Calculator App",
