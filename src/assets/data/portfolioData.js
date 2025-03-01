@@ -5,8 +5,15 @@ import portfolioImg04 from "../images/portfolio-04.gif";
 import portfolioImg05 from "../images/portfolio-05.gif";
 import portfolioImg06 from "../images/portfolio-06.gif";
 import portfolioImg07 from "../images/portfolio-07.gif";
+import portfolioImg10 from "../images/portfolio-10.gif";
+import portfolioImg11 from "../images/portfolio-11.gif";
+import portfolioImg12 from "../images/portfolio-12.gif";
+import portfolioImg13 from "../images/portfolio-13.gif";
+import portfolioImg14 from "../images/portfolio-14.gif";
+import portfolioImg15 from "../images/portfolio-15.gif";
 
 const portfolios = [
+  //old projects below
   {
     id: "01",
     imgUrl: portfolioImg01,
@@ -85,6 +92,66 @@ const portfolios = [
       "React Count-Up",
     ],
     siteUrl: "#",
+  },
+  {
+    id: "10",
+    imgUrl: portfolioImg10,
+    category: "Web Design",
+    title: "Shoe e-commerce Website",
+    description:
+      "A simple shoe shopper app built with vanilla javascript,CSS, and HTML. The app is designed to be user-friendly and responsive, with a sleek and modern interface.",
+    technologies: ["HTML", "CSS", "Javascript"],
+    siteUrl: "https://warissayed.github.io/shoeshopper/",
+  },
+  {
+    id: "11",
+    imgUrl: portfolioImg11,
+    category: "Web Design",
+    title: "Image Gallery",
+    description:
+      "A simple image gallery app built with vanilla javascript,CSS, and HTML. The app is designed to be user-friendly and responsive, with a sleek and modern interface.",
+    technologies: ["HTML", "CSS", "Javascript"],
+    siteUrl: "https://warissayed.github.io/CatSearch/",
+  },
+  {
+    id: "12",
+    imgUrl: portfolioImg12,
+    category: "Web Design",
+    title: "Buzz Play Web Music player",
+    description:
+      "A simple Buzz Play app built with vanilla javascript,CSS, and HTML. The app is designed to be user-friendly and responsive, with a sleek and modern interface.",
+    technologies: ["HTML", "CSS", "Javascript"],
+    siteUrl: "https://warissayed.github.io/bazzplay/",
+  },
+  {
+    id: "13",
+    imgUrl: portfolioImg13,
+    category: "Web Design",
+    title: "Buzz Play",
+    description:
+      "A simple Buzz Play app built with vanilla javascript,CSS, and HTML. The app is designed to be user-friendly and responsive, with a sleek and modern interface.",
+    technologies: ["HTML", "CSS", "Javascript"],
+    siteUrl: "https://warissayed.github.io/bazzplay/",
+  },
+  {
+    id: "14",
+    imgUrl: portfolioImg14,
+    category: "Web Design",
+    title: "Drum Kit App",
+    description:
+      "A simple drum kit app built with vanilla javascript,CSS, and HTML. The app is designed to be user-friendly and responsive, with a sleek and modern interface.",
+    technologies: ["HTML", "CSS", "Javascript"],
+    siteUrl: "https://warissayed.github.io/Drum-kit/",
+  },
+  {
+    id: "15",
+    imgUrl: portfolioImg15,
+    category: "Web Design",
+    title: "Calculator App",
+    description:
+      "A simple calculator app built with vanilla javascript,CSS, and HTML. The app is designed to be user-friendly and responsive, with a sleek and modern interface.",
+    technologies: ["HTML", "CSS", "Javascript"],
+    siteUrl: "https://warissayed.github.io/Calculator-App/",
   },
 ];
 
