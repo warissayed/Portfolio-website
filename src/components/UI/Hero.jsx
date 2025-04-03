@@ -1,7 +1,7 @@
 import React from "react";
 import heroImg from "../../assets/images/Avatar 2.png";
 import CountUp from "react-countup";
-import resume from "../../assets/pdf/warissayed (2).pdf";
+import resume from "../../assets/pdf/Warissayed.pdf";
 import { motion } from "framer-motion";
 import { Reveal } from "../Animation/Reveal";
 import { RevealX } from "../Animation/RevealX";
@@ -83,7 +83,7 @@ const Hero = () => {
             {/**=========hero para =======*/}
             <RevealX>
               {" "}
-              <p className="flex gap-2 text-headingColor mt-14 font-[600] text-[17px] leading-7 sm:pl-14 sm:pr-10">
+              <p className="flex gap-2 text-headingColor mt-14 font-[600] text-[17px] leading-7 pr-10">
                 <span>
                   <i className="ri-map-pin-line"></i> India Navi Mumbai.
                   <br /> <i className="ri-user-location-fill"></i> I'm a Full
@@ -99,7 +99,7 @@ const Hero = () => {
                 viewport={{
                   once: true,
                 }}
-                className="flex items-center gap-9 mt-14"
+                className="flex items-center gap-9 mt-7"
               >
                 <span className="text-smallTextColor text-[15px] font-[600]">
                   Follow me:
