@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Header = () => {
   const headerRef = useRef(null);
@@ -123,9 +124,9 @@ const Header = () => {
 
           {/*==================Menu Right ================ */}
           <div className="flex items-center gap-4">
-            <a href="mailto:warissayed72@gmail.com">
-              <button className="flex items-center gap-2 text-smallTextColor font-[600] border border-solid border-smallTextColor py-2 px-4 rounded-[8px] max-h-[32px] hover:bg-primaryColor hover:text-black hover:font-[500] ease-in duration-300">
-                <motion.i
+            <a target="_blank" href="https://wa.me/8452980972">
+              <button className=" flex items-center gap-2 text-smallTextColor font-[600] border border-solid border-smallTextColor py-2 px-4 rounded-[8px] max-h-[32px] hover:bg-gray-200 hover:font-[500] text-xl">
+                <motion.div
                   animate={{ y: [0, -4, 0] }} // Move up, then down
                   transition={{
                     repeat: Infinity,
@@ -133,8 +134,9 @@ const Header = () => {
                     duration: 2, // Adjust the duration to slow down the floating effect
                     ease: "easeInOut",
                   }}
-                  class="ri-send-plane-fill"
-                ></motion.i>
+                >
+                  <FaWhatsapp className="text-smallTextColor " />
+                </motion.div>
                 <motion.p
                   animate={{ scale: [0.8, 1.05, 0.8] }} // Scale up, then back to original size
                   transition={{

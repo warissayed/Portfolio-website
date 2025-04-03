@@ -66,7 +66,7 @@ const Portfolio = () => {
                 ease: "easeInOut",
               }}
               onClick={() => setSelectTab("all")}
-              className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px] "
+              className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px] hover:bg-primaryColor hover:text-white hover:border-gray-500 ease-in duration-200"
             >
               All
             </motion.button>
@@ -79,7 +79,7 @@ const Portfolio = () => {
                 ease: "easeInOut",
               }}
               onClick={() => setSelectTab("web-design")}
-              className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]"
+              className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px] hover:bg-primaryColor hover:text-white hover:border-gray-500 ease-in duration-200"
             >
               Web Design
             </motion.button>
@@ -92,7 +92,7 @@ const Portfolio = () => {
                 ease: "easeInOut",
               }}
               onClick={() => setSelectTab("ux-design")}
-              className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]"
+              className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px] hover:bg-primaryColor hover:text-white hover:border-gray-500 ease-in duration-200"
             >
               UX Design
             </motion.button>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { IoLogoGithub, IoMdMail, IoLogoWhatsapp } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa";
 
 const MobileNavbar = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -34,11 +35,11 @@ const MobileNavbar = () => {
               showIcons ? "" : "hidden"
             }`}
           >
-            <a href="#about">
-              <i className="icon ri-home-4-line"></i>
+            <a href="mailto:sayedwarisraza@gmail.com" target="_blank">
+              <IoMdMail />
             </a>
-            <a href="#services">
-              <i className="icon ri-survey-line"></i>
+            <a href="https://github.com/warissayed" target="_blank">
+              <IoLogoGithub />
             </a>
           </div>
           <div
@@ -46,11 +47,11 @@ const MobileNavbar = () => {
               showIcons ? "" : "hidden"
             }`}
           >
-            <a href="#portfolio">
-              <i className="icon ri-code-box-line"></i>
+            <a href="https://www.linkedin.com/in/warissayed/" target="_blank">
+              <FaLinkedin />
             </a>
-            <a href="#contact">
-              <i className="icon ri-contacts-book-line"></i>
+            <a target="_blank" href="https://wa.me/8452980972">
+              <IoLogoWhatsapp />
             </a>
           </div>
           <label htmlFor="check" className="control-btn">
