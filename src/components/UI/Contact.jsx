@@ -67,12 +67,12 @@ const Contact = () => {
               duration: 2,
               ease: "easeInOut",
             }}
-            className="text-headingColor font-[700] text-[2.5rem] mb-8"
+            className="font-[700] text-[2.5rem] mb-8"
           >
             Get in Touch
           </motion.h2>
         </Reveal>
-        <div className=" lg:flex mb:flex justify-between items-center">
+        <div className=" lg:flex mb:flex justify-between items-center gap-3">
           <div className=" sm:w-[100%] lg:w-[50%] mb:w-1/2 h-[300px] sm:h-[450px]">
             <iframe
               title="google-maps"
@@ -83,7 +83,7 @@ const Contact = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>{" "}
-          <div className="w-full mt-8 md:mt-0 sm:h-[450px] sm:w-[450px] md:w-[100%] lg:w-1/2 lg:flex items-center bg-[#b2a4f5] px-4 lg:px-8 py-8 rounded-md">
+          <div className="w-full mt-8 md:mt-0 sm:h-[450px] sm:w-[450px] md:w-[100%] lg:w-1/2 lg:flex items-center dark:bg-primaryColor bg-[#b2a4f5] px-4 lg:px-8 py-8 rounded-md">
             <form ref={form} onSubmit={sendEmail} className="w-full ">
               <div className="mb-5">
                 <input

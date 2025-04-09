@@ -5,6 +5,7 @@ import resume from "../../assets/pdf/Warissayed.pdf";
 import { motion } from "framer-motion";
 import { Reveal } from "../Animation/Reveal";
 import { RevealX } from "../Animation/RevealX";
+import { FaLinkedin } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -38,7 +39,7 @@ const Hero = () => {
                   duration: 2,
                   ease: "easeInOut",
                 }}
-                className="text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[45px] sm:leading-[46px] mt-5"
+                className="font-[800] text-[1.8rem] sm:text-[40px] leading-[45px] sm:leading-[46px] mt-5"
               >
                 I'm Waris Sayed{" "}
                 <motion.h1
@@ -57,7 +58,7 @@ const Hero = () => {
             <div className="flex items-center gap-6 mt-7">
               <a href="#contact">
                 <Reveal>
-                  <button className=" rounded-lg border-2 border-dashed border-black bg-primaryColor px-4 py-2 font-semibold uppercase text-white transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+                  <button className=" rounded-lg border-2 border-dashed border-black bg-primaryColor px-4 py-2 font-semibold uppercase   transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
                     <i class="ri-mail-fill"></i>Hire me
                   </button>
                 </Reveal>
@@ -65,7 +66,7 @@ const Hero = () => {
               <Reveal>
                 <a
                   href="#portfolio"
-                  className=" text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor"
+                  className="font-[600] text-[16px] border-b border-solid border-smallTextColor"
                 >
                   See Portfolio
                 </a>
@@ -74,7 +75,7 @@ const Hero = () => {
                 <a
                   href={resume}
                   download={resume}
-                  className=" text-smallTextColor font-[600] text-[16px] border-b border-solid border-smallTextColor flex"
+                  className="font-[600] text-[16px] border-b border-solid border-smallTextColor flex"
                 >
                   <i class="ri-arrow-down-line"></i> Resume
                 </a>{" "}
@@ -83,7 +84,7 @@ const Hero = () => {
             {/**=========hero para =======*/}
             <RevealX>
               {" "}
-              <p className="flex gap-2 text-headingColor mt-14 font-[600] text-[17px] leading-7 pr-10">
+              <p className="flex gap-2  mt-14 font-[600] text-[17px] leading-7 pr-10">
                 <span>
                   <i className="ri-map-pin-line"></i> India Navi Mumbai.
                   <br /> <i className="ri-user-location-fill"></i> I'm a Full
@@ -101,27 +102,15 @@ const Hero = () => {
                 }}
                 className="flex items-center gap-9 mt-7"
               >
-                <span className="text-smallTextColor text-[15px] font-[600]">
-                  Follow me:
-                </span>
+                <span className="text-[15px] font-[600]">Follow me:</span>
                 <span>
                   <a
                     target="_blank"
                     href="https://www.linkedin.com/in/warissayed/"
-                    className="text-smallTextColor text-[18px] font-[600]"
+                    className=" text-[18px] font-[600]"
                   >
                     {/**=========linkedin svg =======*/}
-                    <svg
-                      className="w-[20px] h-[20px]"
-                      xmlns="http://www.w3.org/2000/svg"
-                      x="0px"
-                      y="0px"
-                      width="100"
-                      height="100"
-                      viewBox="0 0 30 30"
-                    >
-                      <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"></path>
-                    </svg>
+                    <FaLinkedin />
                     {/**=========linkedin svg End =======*/}
                   </a>
                 </span>
@@ -182,7 +171,7 @@ const Hero = () => {
 
           <div className="md:basis-1/5 flex-col justify-between text-center mt-10 flex-wrap gap-3 md:mt-0 md:flex-col md:justify-end md:text-end">
             <div className="mb-10">
-              <h2 className="text-headingColor font-[700] text-[32px] ">
+              <h2 className="font-[700] text-[32px] ">
                 <CountUp
                   start={0.0}
                   end={1.5}
@@ -192,36 +181,28 @@ const Hero = () => {
                 />
               </h2>
 
-              <h4 className="text-headingColor font-[600] text-[18px] ">
-                Experience
-              </h4>
+              <h4 className="font-[600] text-[18px] ">Experience</h4>
             </div>
 
             <div className="mb-10">
-              <h2 className="text-headingColor font-[700] text-[32px] ">
+              <h2 className=" font-[700] text-[32px] ">
                 <CountUp start={0} end={100} duration={2} suffix="%" />
               </h2>
-              <h4 className="text-headingColor font-[600] text-[18px] ">
-                Success Rate
-              </h4>
+              <h4 className=" font-[600] text-[18px] ">Success Rate</h4>
             </div>
 
             <div className="mb-10">
-              <h2 className="text-headingColor font-[700] text-[32px] ">
+              <h2 className=" font-[700] text-[32px] ">
                 <CountUp start={0} end={16} duration={2} suffix="+" />
               </h2>
-              <h4 className="text-headingColor font-[600] text-[18px] ">
-                Project's
-              </h4>
+              <h4 className=" font-[600] text-[18px] ">Project's</h4>
             </div>
 
             <div className="mb-10">
-              <h2 className="text-headingColor font-[700] text-[32px] ">
+              <h2 className=" font-[700] text-[32px] ">
                 <CountUp start={0} end={8} duration={2} suffix="+" />
               </h2>
-              <h4 className="text-headingColor font-[600] text-[18px] ">
-                Skill's
-              </h4>
+              <h4 className="font-[600] text-[18px] ">Skill's</h4>
             </div>
           </div>
 

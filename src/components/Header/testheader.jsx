@@ -1,10 +1,12 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
+import { BsSun, BsMoon } from "react-icons/bs"; // Icons for light/dark toggle
 
-const Header = () => {
+const TestHeader = () => {
   const headerRef = useRef(null);
   const menuRef = useRef(null);
+  const [isDarkMode, setIsDarkMode] = useState(false);
   let scrollTimeout = null;
 
   const stickyHeaderFunc = () => {
@@ -30,14 +32,14 @@ const Header = () => {
       }, 3000);
     });
   };
+
   useEffect(() => {
     stickyHeaderFunc();
-    return window.removeEventListener("scroll", stickyHeaderFunc);
+    return () => window.removeEventListener("scroll", stickyHeaderFunc);
   }, []);
 
   const handleClick = (e) => {
     e.preventDefault();
-
     const targetAttr = e.target.getAttribute("href");
     const location = document.querySelector(targetAttr).offsetTop;
 
@@ -49,14 +51,20 @@ const Header = () => {
   };
 
   const toggleMenu = () => menuRef.current.classList.toggle("show_menu");
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    document.documentElement.classList.toggle("dark");
+  };
+
   return (
     <header
       ref={headerRef}
-      className="w-full h-[80px] leading-[80px] flex items-center"
+      className="w-full h-[80px] leading-[80px] flex items-center border-b border-solid border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 transition-all duration-300"
     >
       <div className="container">
         <div className="flex items-center justify-between">
-          {/*================== Logo================ */}
+          {/* Logo */}
           <div className="flex items-center gap-[10px]">
             <motion.span
               animate={{ rotate: 360 }}
@@ -70,83 +78,55 @@ const Header = () => {
             >
               W
             </motion.span>
-            <div className=" leading-[20px]">
-              <h2 className=" text-xl text-smallTextColor font-[700]">Waris</h2>
-              <p className="text-smallTextColor text-[14px] font-[500]">
+            <div className="leading-[20px]">
+              <h2 className="text-xl text-smallTextColor dark:text-white font-[700]">
+                Waris
+              </h2>
+              <p className="text-smallTextColor dark:text-gray-300 text-[14px] font-[500]">
                 sayed
               </p>
             </div>
           </div>
-          {/*==================logo End ================ */}
-          {/*================== Menu  ================ */}
 
+          {/* Menu */}
           <div className="menu" ref={menuRef} onClick={toggleMenu}>
             <ul className="flex items-center justify-center gap-10">
-              <li>
-                <a
-                  onClick={handleClick}
-                  className=" text-smallTextColor font-[600] hover:text-primaryColor border"
-                  href="#about"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  onClick={handleClick}
-                  className=" text-smallTextColor font-[600] hover:text-primaryColor"
-                  href="#services"
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  onClick={handleClick}
-                  className=" text-smallTextColor font-[600] hover:text-primaryColor"
-                  href="#portfolio"
-                >
-                  Portfolio
-                </a>
-              </li>
-              <li>
-                <a
-                  onClick={handleClick}
-                  className=" text-smallTextColor font-[600] hover:text-primaryColor  "
-                  href="#contact"
-                >
-                  Contact
-                </a>
-              </li>
+              {["about", "services", "portfolio", "contact"].map((item) => (
+                <li key={item}>
+                  <a
+                    onClick={handleClick}
+                    className="text-smallTextColor dark:text-white font-[600] hover:text-primaryColor"
+                    href={`#${item}`}
+                  >
+                    {item.charAt(0).toUpperCase() + item.slice(1)}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
-          {/*==================Menu End ================ */}
 
-          {/*==================Menu Right ================ */}
+          {/* Menu Right */}
           <div className="flex items-center gap-4">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://wa.me/918452980972"
-            >
-              <button className=" flex items-center gap-2 text-smallTextColor font-[600] border border-solid border-smallTextColor py-2 px-4 rounded-[8px] max-h-[32px] hover:bg-gray-200 hover:font-[500] text-xl">
+            {/* WhatsApp Button */}
+            <a target="_blank" rel="noreferrer" href="https://wa.me/8452980972">
+              <button className="flex items-center gap-2 text-smallTextColor dark:text-white font-[600] border border-solid border-smallTextColor dark:border-white py-2 px-4 rounded-[8px] max-h-[32px] hover:bg-gray-200 dark:hover:bg-gray-700 hover:font-[500] text-xl">
                 <motion.div
-                  animate={{ y: [0, -4, 0] }} // Move up, then down
+                  animate={{ y: [0, -4, 0] }}
                   transition={{
                     repeat: Infinity,
                     repeatType: "loop",
-                    duration: 2, // Adjust the duration to slow down the floating effect
+                    duration: 2,
                     ease: "easeInOut",
                   }}
                 >
-                  <FaWhatsapp className="text-smallTextColor " />
+                  <FaWhatsapp />
                 </motion.div>
                 <motion.p
-                  animate={{ scale: [0.8, 1.05, 0.8] }} // Scale up, then back to original size
+                  animate={{ scale: [0.8, 1.05, 0.8] }}
                   transition={{
                     repeat: Infinity,
                     repeatType: "loop",
-                    duration: 3, // Adjust the duration to slow down the pop-out effect
+                    duration: 3,
                     ease: "easeInOut",
                   }}
                 >
@@ -154,18 +134,28 @@ const Header = () => {
                 </motion.p>
               </button>
             </a>
+
+            {/* Dark Mode Toggle Button */}
+            <button
+              onClick={toggleDarkMode}
+              className="text-2xl text-smallTextColor dark:text-white p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition"
+              title="Toggle Theme"
+            >
+              {isDarkMode ? <BsSun /> : <BsMoon />}
+            </button>
+
+            {/* Mobile Menu Icon */}
             <span
               onClick={toggleMenu}
-              className=" text-2xl text-smallTextColor md:hidden cursor-pointer"
+              className="text-2xl text-smallTextColor dark:text-white md:hidden cursor-pointer"
             >
-              <i class="ri-menu-line"></i>
+              <i className="ri-menu-line"></i>
             </span>
           </div>
-          {/*==================Menu Right End================ */}
         </div>
       </div>
     </header>
   );
 };
 
-export default Header;
+export default TestHeader;

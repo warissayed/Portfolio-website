@@ -38,7 +38,7 @@ const Modal = ({ activeId, setShowModal }) => {
 
         <button
           onClick={() => setShowModal(false)}
-          className="w-[1.8rem] h-[1.8rem] bg-[white] absolute top-[1.7rem] right-[1.7rem] text-[25px] flex items-center justify-center rounded-[3px] leading-0 cursor-pointer"
+          className="w-[1.8rem] h-[1.8rem] bg-[white] text-black absolute top-[1.7rem] right-[1.7rem] text-[25px] flex items-center justify-center rounded-[3px] leading-0 cursor-pointer"
         >
           &times;
         </button>

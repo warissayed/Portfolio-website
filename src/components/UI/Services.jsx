@@ -21,17 +21,17 @@ const Services = () => {
           }}
           className="text-center"
         >
-          <h2 className="text-headingColor font-[800] text-[2.4rem] mb-1">
+          <h2 className=" font-[800] text-[2.4rem] mb-1">
             Capabilities & Tech Stack
           </h2>
 
-          <p className="lg:max-w-[600px] lg:mx-auto text-headingColor font-[500] text-[16px] leading-7">
+          <p className="lg:max-w-[600px] lg:mx-auto  font-[500] text-[16px] leading-7">
             My Capabilities and Tech Stack are a reflection of my commitment
           </p>
         </motion.div>{" "}
         <div className="flex flex-col justify-center sm:py-12">
           <div className="w-full py-3 px-2 sm:max-w-xl sm:mx-auto sm:px-0">
-            <div className="relative text-gray-700 antialiased text-sm font-semibold">
+            <div className="relative antialiased text-sm font-semibold">
               {/**=========Vertical line in the middle =======*/}
               <div className="hidden absolute w-1 sm:block bg-indigo-300 h-full left-1/2 transform -translate-x-1/2"></div>
               {/**=========left card =======*/}
@@ -40,11 +40,11 @@ const Services = () => {
                   <div className="flex items-center flex-col sm:flex-row">
                     <div className="flex  justify-start w-full mx-auto items-center">
                       <div className="w-full sm:w-1/2 sm:pr-8">
-                        <div className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer easy-in duration-150">
+                        <div className="border border-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer easy-in duration-150">
                           <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font[600] text-2xl ">
                             Frontend Development
                           </h3>
-                          <div className="text-[15px] text-smallTextColor leading-7 group-hover:text-white group-hover:font-[500]">
+                          <div className="text-[15px] leading-7 group-hover:text-white group-hover:font-[500]">
                             <ul className="space-y-2">
                               <li>
                                 <span className="font-bold">
@@ -90,12 +90,12 @@ const Services = () => {
                   <div className="flex items-center flex-col sm:flex-row">
                     <div className="flex  justify-end w-full mx-auto items-center">
                       <div className="w-full sm:w-1/2 sm:pl-8">
-                        <div className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer easy-in duration-150">
+                        <div className="border border-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer easy-in duration-150">
                           <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white text-2xl ">
                             Backend Development
                           </h3>
 
-                          <p className="text-[15px] text-smallTextColor leading-7 group-hover:text-white ">
+                          <p className="text-[15px] leading-7 group-hover:text-white ">
                             <ul className="space-y-2">
                               <li>
                                 <span className="font-bold">
@@ -140,11 +140,11 @@ const Services = () => {
                   <div className="flex items-center flex-col sm:flex-row">
                     <div className="flex  justify-start w-full mx-auto items-center">
                       <div className="w-full sm:w-1/2 sm:pr-8">
-                        <div className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer easy-in duration-150">
+                        <div className="border border-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer easy-in duration-150">
                           <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font[600] text-2xl ">
                             Mobile Development
                           </h3>
-                          <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
+                          <p className="text-[15px]  group-hover:text-white group-hover:font-[500] leading-7">
                             I build responsive, high-performing mobile
                             applications using{" "}
                             <span className="font-bold">
@@ -174,11 +174,11 @@ const Services = () => {
                   <div className="flex items-center flex-col sm:flex-row">
                     <div className="flex  justify-end w-full mx-auto items-center">
                       <div className="w-full sm:w-1/2 sm:pl-8">
-                        <div className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer easy-in duration-150">
-                          <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font[600] text-2xl ">
+                        <div className="border border-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer easy-in duration-150">
+                          <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-smallTextColor group-hover:font[600] text-2xl ">
                             Learning and Further Projects section:
                           </h3>
-                          <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7">
+                          <p className="text-[15px]  group-hover:text-white group-hover:font-[500] leading-7">
                             I'm currently learning Go and Rust, with a keen
                             interest in AI. One of my project ideas, Daily Task
                             Check, aims to help users manage and track their

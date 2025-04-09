@@ -7,11 +7,14 @@ import Portfolio from "./components/UI/Portfolio";
 import Contact from "./components/UI/Contact";
 import MobileNavbar from "./components/Header/MobileNavbar";
 import SkillsAndExperience from "./components/UI/SkillsAndExperience";
+import TestHeader from "./components/Header/testheader";
 
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
+      <TestHeader />
+
       <MobileNavbar />
       <main>
         <Hero />

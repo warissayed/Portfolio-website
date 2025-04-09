@@ -50,9 +50,7 @@ const Portfolio = () => {
               }}
               className="mb-7 sm:mb-0"
             >
-              <h3 className="text-headingColor text-[2rem] font-[700]">
-                My recent Projects
-              </h3>
+              <h3 className="text-[2rem] font-[700]">My recent Projects</h3>
             </motion.div>
           </Reveal>
 
@@ -66,7 +64,7 @@ const Portfolio = () => {
                 ease: "easeInOut",
               }}
               onClick={() => setSelectTab("all")}
-              className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px] hover:bg-primaryColor hover:text-white hover:border-gray-500 ease-in duration-200"
+              className=" border border-solid border-smallTextColor dark:border-primaryColor py-2 px-4 rounded-[8px] hover:bg-primaryColor hover:text-white hover:border-gray-500 ease-in duration-200"
             >
               All
             </motion.button>
@@ -79,7 +77,7 @@ const Portfolio = () => {
                 ease: "easeInOut",
               }}
               onClick={() => setSelectTab("web-design")}
-              className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px] hover:bg-primaryColor hover:text-white hover:border-gray-500 ease-in duration-200"
+              className="border border-solid border-smallTextColor dark:border-primaryColor py-2 px-4 rounded-[8px] hover:bg-primaryColor hover:text-white hover:border-gray-500 ease-in duration-200"
             >
               Web Design
             </motion.button>
@@ -92,7 +90,7 @@ const Portfolio = () => {
                 ease: "easeInOut",
               }}
               onClick={() => setSelectTab("ux-design")}
-              className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px] hover:bg-primaryColor hover:text-white hover:border-gray-500 ease-in duration-200"
+              className="border border-solid border-smallTextColor dark:border-primaryColor py-2 px-4 rounded-[8px] hover:bg-primaryColor hover:text-white hover:border-gray-500 ease-in duration-200"
             >
               UX Design
             </motion.button>

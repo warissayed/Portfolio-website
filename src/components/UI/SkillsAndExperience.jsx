@@ -2,19 +2,19 @@ import React from "react";
 
 function SkillsAndExperience() {
   return (
-    <div className="w-full h-full flex items-center justify-center bg-white px-4 lg:px-10">
+    <div className="w-full h-full flex items-center justify-center  px-4 lg:px-10">
       <div className="w-full max-w-screen-lg flex flex-col items-center">
-        <div className="text-headingColor font-extrabold text-4xl mb-2 text-center">
+        <div className=" font-extrabold text-4xl mb-2 text-center">
           Skills & Experiences
         </div>
-        <div className="text-lg font-light mb-10 text-black text-center">
+        <div className="text-lg font-light mb-10  text-center">
           My skills and experiences in web and mobile development
         </div>
 
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Skills Section */}
 
-          <div className="border hover:bg-primaryColor hover:text-white  border-gray-300 text-smallTextColor  rounded-lg shadow-xl p-6 transition-all duration-300 ">
+          <div className="border hover:bg-primaryColor hover:text-white  border-gray-300   rounded-lg shadow-xl p-6 transition-all duration-300 ">
             <h2 className=" text-2xl font-semibold mb-4">Skills</h2>
             <ul className=" text-lg space-y-2 list-disc list-inside">
               <li className="hover:text-xl transition-all duration-200 ">
@@ -51,7 +51,7 @@ function SkillsAndExperience() {
           </div>
 
           {/* Experience Section */}
-          <div className="border hover:bg-primaryColor hover:text-white  border-gray-300 text-smallTextColor  rounded-lg shadow-xl p-6  transition-all duration-300">
+          <div className="border hover:bg-primaryColor hover:text-white  border-gray-300   rounded-lg shadow-xl p-6  transition-all duration-300">
             <h2 className=" text-2xl font-semibold mb-4">Experience</h2>
             <ul className=" text-lg space-y-4">
               <li>
