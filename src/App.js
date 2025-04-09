@@ -12,8 +12,8 @@ import TestHeader from "./components/Header/testheader";
 function App() {
   return (
     <>
-      {/* <Header /> */}
-      <TestHeader />
+      <Header />
+      {/* <TestHeader /> */}
 
       <MobileNavbar />
       <main>

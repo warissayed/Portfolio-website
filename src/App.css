@@ -62,11 +62,12 @@ section {
     top: 0;
     right: 0;
     z-index: 200;
-    background: #fff;
+
     flex-direction: column;
     line-height: 30px;
     justify-content: center;
     align-items: center;
+    @apply bg-white text-black dark:bg-gray-900 dark:text-white;
   }
   .show_menu {
     display: block;
